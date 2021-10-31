@@ -19,7 +19,7 @@ $primary: #b063c5;
 }
 
 body{
-	font-family: $font-primary;
+	font-family: 'Exo 2', sans-serif;
 	font-size: 14px;
 	line-height: 1.8;
 	font-weight: normal;
@@ -174,7 +174,7 @@ h1, h2, h3, h4, h5,
 		h3{
 			font-size: 34px;
 			font-weight: 400;
-			font-family: $font-secondary;
+			font-family: 'Exo 2', sans-serif;
 			margin-bottom: 0;
 			a{
 				color: $white;
