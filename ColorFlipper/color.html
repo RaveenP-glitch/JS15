@@ -7,6 +7,8 @@
     <title>Color Flipper || Simple</title>
     <!-- styles -->
     <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="iconmain.png" type="image/icon type" />
+
   </head>
   <body>
     <nav>
@@ -26,8 +28,18 @@
       <div class="container">
         <h2>Background Color: <span class="color"> #f1f5f8 </span></h2>
         <button class="bt btn-hero" id="btn">click me</button>
+        <button class="bt btn-reset" id="btn" onclick="location.reload()">reset</button>
       </div>
     </main>
+
+    <section id="datetimesection">
+
+      <button class="btn" type="button" onclick="displayTime()" >Click me to display Date and Time.</button>
+      <br>
+      <span id="showTime">Time</span>
+
+    </section>
+
 
     <!-- javascript -->
     <script src="app.js"></script>

@@ -20,3 +20,11 @@ btn.addEventListener('click', function(){
     console.log("Color changed");
 
 });
+
+function displayTime(){
+    setInterval(e => function(d = new Date()) {
+        document.getElementById("showTime").innerHTML=(Date())
+    }(), 1000);
+    // document.getElementById("showTime").innerHTML = Date();
+    
+}
