@@ -1,34 +1,142 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css" />
-    <title>Document</title>
+<style> 
+h1{
+  font-size: 50px;
+  font-family: 'Helvetica' !important;
+
+}
+
+.container{
+  display: flex;
+  flex:1;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+
+}
+
+.maindot {
+  width: 150px;
+  height: 150px;
+  border-radius:20px;
+  background: red;
+  position: relative;
+  animation: mymove1 10s infinite;
+
+}
+
+.maindot2 {
+  width: 150px;
+  height: 150px;
+  border-radius:20px;
+  background: red;
+  position: relative;
+  animation: mymove2 10s infinite reverse;
+
+}
+
+.maindot3 {
+  width: 150px;
+  height: 150px;
+  border-radius:20px;
+  background: red;
+  position: relative;
+  animation: mymove3 10s infinite;
+
+}
+
+.newdot{
+  	position: absolute;
+    top:10px;
+    left:10px;
+    color: black;
+    width: 30px;
+    height:30px;
+    background:black;
+    border-radius:50px;
+}
+
+.newdot2{
+  	position: absolute;
+    top:10px;
+    left:10px;
+    color: black;
+    width: 30px;
+    height:30px;
+    background:black;
+    border-radius:50px;
+}
+
+.newdot3{
+  	position: absolute;
+    top:10px;
+    left:10px;
+    color: black;
+    width: 30px;
+    height:30px;
+    background:black;
+    border-radius:50px;
+}
+
+@keyframes mymove1 {
+  0%   {top: 0px; left: -200px; background: red; transform: rotate(0deg);}
+  25%  {top: 0px; left: 0px; background: rgb(37, 112, 211); transform: rotate(180deg);}
+  50%  {top: 0px; left: 200px; background: rgb(211, 211, 109); transform: rotate(360deg);}
+  75%  {top: 0px; left: 0px; background: rgb(14, 145, 14); transform: rotate(180deg);}
+  100% {top: 0px; left: -200px; background: orange; transform: rotate(0deg);}
+}
+
+@keyframes mymove2 {
+  0%   {top: 0px; left: -200px; background: orange; transform: rotate(0deg);}
+  25%  {top: 0px; left: 0px; background:rgb(14, 145, 14); transform: rotate(180deg);}
+  50%  {top: 0px; left: 200px; background: rgb(211, 211, 109); transform: rotate(360deg);}
+  75%  {top: 0px; left: 0px; background:   rgb(37, 112, 211); transform: rotate(180deg);}
+  100% {top: 0px; left: -200px; background: red; transform: rotate(0deg);}
+}
+
+@keyframes mymove3 {
+  0%   {top: 0px; left: -200px; background: red; transform: rotate(0deg);}
+  25%  {top: 0px; left: 0px; background: rgb(37, 112, 211); transform: rotate(180deg);}
+  50%  {top: 0px; left: 200px; background: rgb(211, 211, 109); transform: rotate(360deg);}
+  75%  {top: 0px; left: 0px; background: rgb(14, 145, 14)  ; transform: rotate(180deg);}
+  100% {top: 0px; left: -200px; background: orange; transform: rotate(0deg);}
+}
+
+</style>
 </head>
 <body>
-    <div>
-        <p>
-          <svg
-            style="transform: translatey(5px)"
-            xmlns="http://www.w3.org/2000/svg"
-            width="26"
-            height="22"
-            viewBox="0 0 260 220"
-          >
-            
-          </svg>
-        
-        </p>
-      
-        <div class="wrapper">
-          <div class="circle">
-            <div class="yinyang"></div>
-            <div class="yinyang"></div>
-          </div>
-        </div>
-      </div>
+
+
+<div class="container">
+  <h1>Infinite Roll</h1>
+  
+<div class="maindot">
+	<div class="newdot">
+    </div>
+</div>
+
+</br>
+</br>
+</br>
+<div class="maindot2">
+	<div class="newdot2">
+    </div>
+</div>
+
+
+</br>
+</br>
+</br>
+<div class="maindot3">
+	<div class="newdot3">
+    </div>
+</div>
+</div>
+
+</div>
+
 </body>
 </html>
