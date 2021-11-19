@@ -1,30 +1,39 @@
-const colors = ["green", "red", "rgba(133,122,200)",
-"#f15025"];
-
-const btn = document.getElementById("btn");
-const color = document.querySelector(".color");
+//set inital count
+let count = 0;
 
 
+//select value and buttons
+const value = document.querySelector("#value");
+const btns = document.querySelectorAll(".btn");
 
-function getRandomArbitrary() {
-    return Math.floor(Math.random() * colors.length);
-}
+btns.forEach(function (btn){
+    btn.addEventListener('click', function(e){
+        console.log(e.currentTarget.classList);
+        const styles = e.currentTarget.classList;
+        if(styles.contains('decrease')){
+            count--;
 
-btn.addEventListener('click', function(){
-    //get random number between 0-3
+        }
+        else if(styles.contains('increase')){
+            count++;
 
-   
-    var randomNumber = getRandomArbitrary(0,4);
-    document.body.style.backgroundColor = colors[randomNumber];
-    color.textContent = colors[randomNumber];
-    console.log("Color changed");
+        } else{
+            count = 0;
 
+        }
+        value.textContent=count;
+
+        if(count>0){
+            value.style.color = "green";
+
+        } else if(count < 0){
+
+            value.style.color = "red";
+        }else{
+            value.style.color = "black";
+        }
+       
+
+    });
 });
 
-function displayTime(){
-    setInterval(e => function(d = new Date()) {
-        document.getElementById("showTime").innerHTML=(Date())
-    }(), 1000);
-    // document.getElementById("showTime").innerHTML = Date();
-    
-}

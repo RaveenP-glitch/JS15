@@ -213,7 +213,7 @@ main {
   color: var(--clr-primary-5);
 }
 
-.btn-hero {
+button {
   font-family: var(--ff-primary);
   text-transform: uppercase;
   background: transparent;
@@ -228,13 +228,15 @@ main {
   border-radius: var(--radius);
   font-size: 1.2rem;
   padding: 0.75rem 1.25rem;
+  margin-right: 15px;
+  margin-top: 30px;
 }
-.btn-hero:hover {
+button:hover {
   color: var(--clr-white);
   background: var(--clr-black);
 }
 
-.btn-hero:active {
+button:active {
   background-color: #858685;
   box-shadow: 0 5px #666;
   transform: translateY(2px);
@@ -310,4 +312,9 @@ main {
 .btn-reset:active {
 
   transform: translateY(4px);
+}
+
+#value{
+  font-size: 150px;
+  font-weight: 800;
 }
